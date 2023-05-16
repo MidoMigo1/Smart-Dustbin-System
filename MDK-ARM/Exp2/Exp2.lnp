@@ -1,0 +1,27 @@
+--cpu=Cortex-M4.fp.sp --branchpatch=sdcomp-29491-629360
+"exp2\startup_stm32l432xx.o"
+"exp2\main.o"
+"exp2\stm32l4xx_it.o"
+"exp2\stm32l4xx_hal_msp.o"
+"exp2\stm32l4xx_hal_tim.o"
+"exp2\stm32l4xx_hal_tim_ex.o"
+"exp2\stm32l4xx_hal.o"
+"exp2\stm32l4xx_hal_rcc.o"
+"exp2\stm32l4xx_hal_rcc_ex.o"
+"exp2\stm32l4xx_hal_flash.o"
+"exp2\stm32l4xx_hal_flash_ex.o"
+"exp2\stm32l4xx_hal_flash_ramfunc.o"
+"exp2\stm32l4xx_hal_gpio.o"
+"exp2\stm32l4xx_hal_dma.o"
+"exp2\stm32l4xx_hal_dma_ex.o"
+"exp2\stm32l4xx_hal_pwr.o"
+"exp2\stm32l4xx_hal_pwr_ex.o"
+"exp2\stm32l4xx_hal_cortex.o"
+"exp2\stm32l4xx_hal_exti.o"
+"exp2\stm32l4xx_hal_uart.o"
+"exp2\stm32l4xx_hal_uart_ex.o"
+"exp2\system_stm32l4xx.o"
+--strict --scatter "Exp2\Exp2.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "Exp2.map" -o Exp2\Exp2.axf
