@@ -1,23 +1,30 @@
 This GITHUB repo contains all the codes and directories and the headers for the smart dustbin embedded systems project.
-The main code is available inside core-> src
+
+FILE STRUCTURE
+
+The repo contain 3 folders and 3 files.
+
+the first file is the read me file containing the folder structures and how to run.
+
+exp2.ioc is the file running the whole project on Keil uVision.
+
+The MDK-ARM folder contains all the files for the ARM cortex-M based device which include its assembler, linker and libraries.
+
+The driver folder contains all the driver files.
+
+The core folder contains all the code for the main file and the STM inside the Src subfolder. 
 
 
+HOW TO RUN
 
-The proposal
+install the files of the repo 
 
-Our proposed project is a smart dustbin management system that aims to improve waste management and promote a cleaner environment. The system will use ultrasonic sensors placed in the dustbin to detect the level of waste. The data is then sent to a module that alerts those in charge that it's time for disposal through an SMS message and in addition, A LED light will be used to reflect that the dustbin has reached its peak level and the trash needs to be emptied. The project can be further improved later on for bigger waste containers using more or better sensors.
+run the exp2.ioc file which will open CUBEMX 
 
-How the system works:
+press on the generate code button 
 
-The system is designed to operate with any dustbin equipped with a mechanical opener and utilizes a sensor to determine the distance between the sensor and the depth of the bin, enabling the system to determine the bin's empty depth. If the distance is 0.2% or less for two consecutive readings, the system will change the flag to 1 and send an alert to the user notifying them that the bin is full and requires emptying. When the distance is greater that 0.2 if the bin’s height it turns the flag to 0, so the LED turns off.
+Press the translate button
 
-Next Milestone
+press the build button
 
-Send a message to the user once the trash is emptied.
-Connect the sensor to a power source.
-Connect an external LED.
-Connect the GSM model.
-
-link for the code and demo on drive
-
-https://drive.google.com/drive/u/1/folders/1UjGRkwK7j5Lc7K5G9Njl28aMKsLREUUy
+press the download button
